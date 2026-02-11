@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAMCTA - Galería Multimedia</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/galeria.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+           <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo con Imagen a la Izquierda -->
+            <div class="logo-con-imagen">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-img-container">
+                        <!-- Imagen del logo -->
+                        <img src="assets/img/logo.jpg" 
+                             alt="ALAMCTA - Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental"
+                             class="logo-img">
+                    </div>
+                    <div class="logo-texto">
+                        <h1 class="logo-titulo">ALAMCTA</h1>
+                        <p class="logo-descripcion">Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Botón Menú Móvil -->
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Menú de Navegación -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="investigacion.html"><i class="fas fa-flask"></i> Investigación</a></li>
+                <li><a href="proyectos.html"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                <li><a href="galeria.html"><i class="fas fa-images"></i> Galería</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+    <!-- Hero Section Galería -->
+    <section class="page-hero" style="background: linear-gradient(rgba(155, 89, 182, 0.9), rgba(142, 68, 173, 0.8)), url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Galería Multimedia</h1>
+            <p>Imágenes y documentos históricos de ALAMCTA</p>
+        </div>
+    </section>
+
+    <!-- Sección de Filtros -->
+    <section class="galeria-filtros">
+        <div class="container">
+            <div class="filtros-container">
+                <h3>Filtrar por categoría:</h3>
+                <div class="filtros-botones">
+                    <button class="filtro-btn active" data-filter="todos">Todos</button>
+                    <button class="filtro-btn" data-filter="congresos">Congresos</button>
+                    <button class="filtro-btn" data-filter="conferencistas">Conferencistas</button>
+                    <button class="filtro-btn" data-filter="cursos">Cursos</button>
+                    <button class="filtro-btn" data-filter="webinars">Webinars</button>
+                    <button class="filtro-btn" data-filter="historia">Historia</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galería de Imágenes Reales -->
+    <section class="galeria-grid">
+        <div class="container">
+            <div class="galeria-items">
+                
+                <!-- Imagen 1: David DeMarini -->
+                <div class="galeria-item" data-category="conferencistas congresos">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/david-demarini.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Dr. David M. DeMarini, PhD</h4>
+                                <p>Conferencista XIII Congreso</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Dr. David M. DeMarini</h3>
+                        <p class="galeria-fecha">XIII Congreso - Abril 2024</p>
+                        <p class="galeria-desc">Conferencia: "Mutagenicity and Carcinogenicity of Air Pollution"</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Premio Hollaender 2011</span>
+                            <span class="tag">UNC Chapel Hill</span>
+                            <span class="tag">Contaminación del Aire</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal1">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 2: Prakash Hande -->
+                <div class="galeria-item" data-category="conferencistas congresos">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/prakash-hande.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Dr. M. Prakash Hande, PhD, MPH</h4>
+                                <p>Conferencista XIII Congreso</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Dr. M. Prakash Hande</h3>
+                        <p class="galeria-fecha">XIII Congreso - Abril 2024</p>
+                        <p class="galeria-desc">Conferencia: "Telomeres, Telomerase and DNA Repair"</p>
+                        <div class="galeria-tags">
+                            <span class="tag">NUS Singapur</span>
+                            <span class="tag">176 publicaciones</span>
+                            <span class="tag">Telómeros</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal2">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 3: Gareth Jenkins -->
+                <div class="galeria-item" data-category="conferencistas congresos">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/gareth-jenkins.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Prof. Gareth Jenkins</h4>
+                                <p>Presidente IAEMGS</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Prof. Gareth Jenkins</h3>
+                        <p class="galeria-fecha">XIII Congreso - Abril 2024</p>
+                        <p class="galeria-desc">Conferencia: "Blood cell mutational biomarkers"</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Presidente IAEMGS</span>
+                            <span class="tag">UK Mutagenicity Committee</span>
+                            <span class="tag">Biomarcadores</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal3">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 4: Curso Alexander Hollaender -->
+                <div class="galeria-item" data-category="cursos">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/curso-hollaender.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>XXV Curso Alexander Hollaender</h4>
+                                <p>18-20 Abril 2024</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Curso Alexander Hollaender</h3>
+                        <p class="galeria-fecha">18-20 Abril 2024 - La Paz, Bolivia</p>
+                        <p class="galeria-desc">"Biomonitoreo ambiental aplicado a la salud humana"</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Curso Internacional</span>
+                            <span class="tag">6 Instructores</span>
+                            <span class="tag">Biomonitoreo</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal4">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 5: Mapa Países Miembros -->
+                <div class="galeria-item" data-category="historia">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/mapa-paises.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Países Miembros ALAMCTA</h4>
+                                <p>Red Regional Latinoamericana</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Países Miembros</h3>
+                        <p class="galeria-fecha">Estructura Federativa</p>
+                        <p class="galeria-desc">Brasil, Argentina, Bolivia, Paraguay, Cuba, México</p>
+                        <div class="galeria-tags">
+                            <span class="tag">8 Países</span>
+                            <span class="tag">Red Regional</span>
+                            <span class="tag">Sociedades Nacionales</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal5">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 6: Cronología Histórica -->
+                <div class="galeria-item" data-category="historia">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/cronologia.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Cronología ALAMCTA</h4>
+                                <p>1980 - Presente</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Cronología Histórica</h3>
+                        <p class="galeria-fecha">Eventos desde 1980</p>
+                        <p class="galeria-desc">Congresos y cursos Alexander Hollaender por país</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Historia</span>
+                            <span class="tag">Eventos</span>
+                            <span class="tag">Cronología</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal6">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 7: Información Congreso -->
+
+                <!-- Imagen 8: Webinar 2023 -->
+                <div class="galeria-item" data-category="webinars">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/webinar-2023.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Webinar ALAMCTA</h4>
+                                <p>12 Diciembre 2023</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Webinar: Micronúcleos Orales</h3>
+                        <p class="galeria-fecha">12 Diciembre 2023</p>
+                        <p class="galeria-desc">"El uso de la prueba de micronúcleos en mucosa oral"</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Prof. Juliana Da Silva</span>
+                            <span class="tag">Zoom Webinar</span>
+                            <span class="tag">Micronúcleos</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal8">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 9: Versión Español Hande -->
+                <div class="galeria-item" data-category="conferencistas congresos">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/hande-espanol.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Dr. Prakash Hande</h4>
+                                <p>Versión Español</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Conferencista - Español</h3>
+                        <p class="galeria-fecha">Material traducido</p>
+                        <p class="galeria-desc">"Telomeros, telomerasa y reparo del DNA" - Versión español</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Español</span>
+                            <span class="tag">Traducción</span>
+                            <span class="tag">Material Bilingüe</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal9">Ver información</button>
+                    </div>
+                </div>
+
+                <!-- Imagen 10: Versión Español Jenkins -->
+                <div class="galeria-item" data-category="conferencistas congresos">
+                    <div class="galeria-img-container">
+                        <div class="galeria-img-real" style="background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url('assets/img/galeria/jenkins-espanol.jpg'); background-size: cover; background-position: center;">
+                            <div class="img-overlay">
+                                <h4>Prof. Gareth Jenkins</h4>
+                                <p>Versión Español</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="galeria-info">
+                        <h3>Conferencista - Español</h3>
+                        <p class="galeria-fecha">Material traducido</p>
+                        <p class="galeria-desc">"Biomarcadores mutacionales de células sanguíneas"</p>
+                        <div class="galeria-tags">
+                            <span class="tag">Español</span>
+                            <span class="tag">Traducción</span>
+                            <span class="tag">Carcinogénesis</span>
+                        </div>
+                        <button class="btn-ver-mas" data-modal="modal10">Ver información</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Instrucciones para subir imágenes -->
+   
+    <!-- Modales (igual que antes, pero simplificados para ejemplo) -->
+    <div class="modales-container">
+        
+        <!-- Modal 1: David DeMarini -->
+        <div id="modal1" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Dr. David M. DeMarini, PhD</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/david-demarini.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Conferencia:</strong> "Mutagenicity and Carcinogenicity of Air Pollution"</p>
+                        <p><strong>Institución:</strong> University of North Carolina, Chapel Hill, NC</p>
+                        <p><strong>Premio:</strong> Alexander Hollaender Award (EMGS, 2011)</p>
+                        <p><strong>Áreas de investigación:</strong> Mecanismos moleculares de mutagénesis, espectros de mutación, biomarcadores</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 2: Prakash Hande -->
+        <div id="modal2" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Dr. M. Prakash Hande, PhD, MPH</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/prakash-hande.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Conferencia:</strong> "Telomeres, Telomerase and DNA Repair: Biological and Clinical Significance"</p>
+                        <p><strong>Institución:</strong> National University of Singapore (NUS)</p>
+                        <p><strong>Publicaciones:</strong> 176+ artículos en revistas como Nature Genetics, Cell, Science</p>
+                        <p><strong>Áreas de investigación:</strong> Telómeros, envejecimiento, cáncer, biomarcadores de radiación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 3: Gareth Jenkins -->
+        <div id="modal3" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Prof. Gareth Jenkins</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/gareth-jenkins.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Conferencia:</strong> "Blood cell mutational biomarkers for biomonitoring and understanding disease progression"</p>
+                        <p><strong>Cargos:</strong> 
+                            <ul>
+                                <li>Jefe del Mutagenicity Committee (UK Government)</li>
+                                <li>Presidente de IAEMGS</li>
+                            </ul>
+                        </p>
+                        <p><strong>Institución:</strong> Swansea University Medical School, UK</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 4: Curso Hollaender -->
+        <div id="modal4" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>XXV Curso Alexander Hollaender</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/curso-hollaender.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Fechas:</strong> 18-20 Abril 2024</p>
+                        <p><strong>Lugar:</strong> La Paz, Bolivia (Auditorio Che Guevara - UMSA)</p>
+                        <p><strong>Tema:</strong> "Biomonitoreo ambiental aplicado a la salud humana"</p>
+                        <p><strong>Instructores:</strong> 6 profesores internacionales</p>
+                        <p><strong>Becas:</strong> Disponibles para estudiantes con carta de recomendación</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 5: Mapa Países -->
+        <div id="modal5" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Países Miembros ALAMCTA</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/mapa-paises.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Países miembros:</strong> Brasil, Argentina, Bolivia, Paraguay, Cuba, México</p>
+                        <p><strong>Estructura:</strong> Federación de sociedades nacionales</p>
+                        <p><strong>Sociedad más activa:</strong> MutaGen-Brasil</p>
+                        <p><strong>Red regional desde:</strong> 1980</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 6: Cronología -->
+        <div id="modal6" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Cronología Histórica ALAMCTA</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/cronologia.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Fundación:</strong> 1980 en México</p>
+                        <p><strong>Primer congreso:</strong> 1988 en Costa Rica</p>
+                        <p><strong>Primer curso Hollaender:</strong> 1993 en México</p>
+                        <p><strong>Congreso más reciente:</strong> XIII Congreso 2024 en Bolivia</p>
+                        <p><strong>Curso más reciente:</strong> XXV Curso Hollaender 2024 en Bolivia</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 7: Info Congreso -->
+        <div id="modal7" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>XIII Congreso ALAMCTA - Información</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/info-congreso.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Fechas:</strong> 22-25 Abril 2024</p>
+                        <p><strong>Lugar:</strong> Hotel Calacoto, La Paz, Bolivia</p>
+                        <p><strong>Tema:</strong> "Preservando la salud genética y el medio ambiente en un mundo cambiante"</p>
+                        <p><strong>Costos:</strong> Desde $70 USD (estudiantes) hasta $150 USD (profesionales)</p>
+                        <p><strong>Plazo abstracts:</strong> 10 Marzo 2024</p>
+                        <p><strong>Contacto:</strong> asociacionalamcta@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 8: Webinar 2023 -->
+        <div id="modal8" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Webinar ALAMCTA - Diciembre 2023</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/webinar-2023.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Fecha:</strong> 12 Diciembre 2023 - 18:00 (hora Brasil)</p>
+                        <p><strong>Plataforma:</strong> Zoom Live Webinar</p>
+                        <p><strong>Tema:</strong> "El uso de la prueba de micronúcleos en mucosa oral para monitoreo humano"</p>
+                        <p><strong>Expositora:</strong> Prof. Juliana Da Silva (ULBRA/UNILASALLE, Brasil)</p>
+                        <p><strong>Inscripción:</strong> forms.gle/QMBtP4gNwbWK3r5a6</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 9: Hande Español -->
+        <div id="modal9" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Dr. Prakash Hande - Versión Español</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/hande-espanol.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Conferencia en español:</strong> "Telomeros, telomerasa y reparo del DNA: significancia biológica y clínica"</p>
+                        <p><strong>Traducción de:</strong> "Telomeres, Telomerase and DNA Repair: Biological and Clinical Significance"</p>
+                        <p><strong>Información en español:</strong></p>
+                        <ul>
+                            <li>Profesor asociado, Universidad Nacional de Singapur (NUS)</li>
+                            <li>176+ artículos científicos internacionales</li>
+                            <li>Investigación: telomeros en envejecimiento y cáncer, biomarcadores de radiación</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal 10: Jenkins Español -->
+        <div id="modal10" class="modal">
+            <div class="modal-content">
+                <span class="modal-close">&times;</span>
+                <h2>Prof. Gareth Jenkins - Versión Español</h2>
+                <div class="modal-body">
+                    <div class="modal-img-preview">
+                        <div class="img-placeholder-large" style="background: url('assets/img/galeria/jenkins-espanol.jpg') center/cover;"></div>
+                    </div>
+                    <div class="modal-info-detallada">
+                        <p><strong>Conferencia en español:</strong> "Biomarcadores mutacionales de células sanguíneas para el biomonitoreo y entendimiento de la progresión de la enfermedad"</p>
+                        <p><strong>Traducción de:</strong> "Blood cell mutational biomarkers for biomonitoring and understanding disease progression"</p>
+                        <p><strong>Información en español:</strong></p>
+                        <ul>
+                            <li>Profesor de Carcinogénesis Molecular, Universidad de Swansea, UK</li>
+                            <li>Jefe del Comité de Mutagenecidad del Gobierno del Reino Unido</li>
+                            <li>Presidente de la Asociación Internacional de Sociedades de Medioambiente y Genómica (IAEMGS)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">AL</div>
+                            <div class="logo-text">
+                                <h3>ALAMCTA</h3>
+                                <p>Desde 1980</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p>Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    <p>Rama regional oficial de la IAEMGS</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Historia Institucional</a></li>
+                        <li><a href="investigacion.html">Metodologías</a></li>
+                        <li><a href="proyectos.html">Proyectos Estratégicos</a></li>
+                        <li><a href="eventos.html">Próximo Congreso</a></li>
+                        <li><a href="galeria.html">Galería Multimedia</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> contacto@alamcta.org</p>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ALAMCTA. Todos los derechos reservados.</p>
+                <p class="disclaimer">Organización científica sin fines de lucro registrada desde 1980</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript para Galería -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Filtrado de imágenes por categoría
+            const filterButtons = document.querySelectorAll('.filtro-btn');
+            const galleryItems = document.querySelectorAll('.galeria-item');
+            
+            filterButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    // Remover clase activa de todos los botones
+                    filterButtons.forEach(btn => btn.classList.remove('active'));
+                    
+                    // Agregar clase activa al botón clickeado
+                    this.classList.add('active');
+                    
+                    const filter = this.dataset.filter;
+                    
+                    // Mostrar/ocultar elementos según el filtro
+                    galleryItems.forEach(item => {
+                        if (filter === 'todos' || item.dataset.category.includes(filter)) {
+                            item.style.display = 'block';
+                            setTimeout(() => {
+                                item.style.opacity = '1';
+                                item.style.transform = 'scale(1)';
+                            }, 10);
+                        } else {
+                            item.style.opacity = '0';
+                            item.style.transform = 'scale(0.8)';
+                            setTimeout(() => {
+                                item.style.display = 'none';
+                            }, 300);
+                        }
+                    });
+                });
+            });
+            
+            // Modal functionality
+            const modalTriggers = document.querySelectorAll('.btn-ver-mas');
+            const modals = document.querySelectorAll('.modal');
+            const closeButtons = document.querySelectorAll('.modal-close');
+            
+            // Abrir modal
+            modalTriggers.forEach(trigger => {
+                trigger.addEventListener('click', function() {
+                    const modalId = this.dataset.modal;
+                    const modal = document.getElementById(modalId);
+                    
+                    if (modal) {
+                        modal.style.display = 'block';
+                        document.body.style.overflow = 'hidden';
+                    }
+                });
+            });
+            
+            // Cerrar modal
+            closeButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    const modal = this.closest('.modal');
+                    modal.style.display = 'none';
+                    document.body.style.overflow = '';
+                });
+            });
+            
+            // Cerrar modal al hacer clic fuera
+            window.addEventListener('click', function(event) {
+                modals.forEach(modal => {
+                    if (event.target === modal) {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    }
+                });
+            });
+            
+            // Cerrar con tecla Escape
+            document.addEventListener('keydown', function(event) {
+                if (event.key === 'Escape') {
+                    modals.forEach(modal => {
+                        modal.style.display = 'none';
+                        document.body.style.overflow = '';
+                    });
+                }
+            });
+            
+            // Cargar imágenes con efecto
+            const imageContainers = document.querySelectorAll('.galeria-img-real');
+            imageContainers.forEach((container, index) => {
+                // Simular carga progresiva
+                setTimeout(() => {
+                    container.style.opacity = '1';
+                    container.style.transform = 'scale(1)';
+                }, index * 100);
+            });
+            
+            // Mostrar advertencia si imágenes no cargan
+            setTimeout(() => {
+                const images = document.querySelectorAll('.galeria-img-real');
+                let missingImages = 0;
+                
+                images.forEach(img => {
+                    const bg = window.getComputedStyle(img).backgroundImage;
+                    if (bg.includes('url("")') || bg === 'none') {
+                        missingImages++;
+                    }
+                });
+                
+                if (missingImages > 0) {
+                    console.warn(`⚠️ ${missingImages} imágenes no se encontraron. Sigue las instrucciones en la sección inferior.`);
+                }
+            }, 2000);
+        });
+    </script>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

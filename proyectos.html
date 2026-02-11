@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAMCTA - Proyectos</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+       <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo con Imagen a la Izquierda -->
+            <div class="logo-con-imagen">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-img-container">
+                        <!-- Imagen del logo -->
+                        <img src="assets/img/logo.jpg" 
+                             alt="ALAMCTA - Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental"
+                             class="logo-img">
+                    </div>
+                    <div class="logo-texto">
+                        <h1 class="logo-titulo">ALAMCTA</h1>
+                        <p class="logo-descripcion">Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Botón Menú Móvil -->
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Menú de Navegación -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="investigacion.html"><i class="fas fa-flask"></i> Investigación</a></li>
+                <li><a href="proyectos.html"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                <li><a href="galeria.html"><i class="fas fa-images"></i> Galería</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section Proyectos -->
+    <section class="page-hero" style="background: linear-gradient(rgba(151, 188, 98, 0.9), rgba(76, 175, 80, 0.8)), url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Proyectos Estratégicos</h1>
+            <p>Investigaciones críticas adaptadas a la realidad latinoamericana</p>
+        </div>
+    </section>
+
+    <!-- Mapa de Proyectos -->
+    <section class="mapa-proyectos">
+        <div class="container">
+            <h2 class="section-title">Proyectos en América Latina</h2>
+            <div class="mapa-container">
+                <div class="mapa-latinoamerica">
+                    <div class="proyecto-punto argentina" data-proyecto="1">
+                        <div class="punto"></div>
+                        <div class="punto-info">Argentina</div>
+                    </div>
+                    <div class="proyecto-punto brasil" data-proyecto="1">
+                        <div class="punto"></div>
+                        <div class="punto-info">Brasil</div>
+                    </div>
+                    <div class="proyecto-punto paraguay" data-proyecto="1">
+                        <div class="punto"></div>
+                        <div class="punto-info">Paraguay</div>
+                    </div>
+                    <div class="proyecto-punto bolivia" data-proyecto="2">
+                        <div class="punto"></div>
+                        <div class="punto-info">Bolivia</div>
+                    </div>
+                    <div class="proyecto-punto region" data-proyecto="3">
+                        <div class="punto"></div>
+                        <div class="punto-info">Región Andina</div>
+                    </div>
+                    <div class="proyecto-punto amazonia" data-proyecto="4">
+                        <div class="punto"></div>
+                        <div class="punto-info">Amazonia</div>
+                    </div>
+                </div>
+                
+                <div class="leyenda-proyectos">
+                    <div class="leyenda-item">
+                        <div class="color-marker" style="background-color: #e74c3c;"></div>
+                        <span>Proyecto 1: Plaguicidas</span>
+                    </div>
+                    <div class="leyenda-item">
+                        <div class="color-marker" style="background-color: #3498db;"></div>
+                        <span>Proyecto 2: Minería</span>
+                    </div>
+                    <div class="leyenda-item">
+                        <div class="color-marker" style="background-color: #2ecc71;"></div>
+                        <span>Proyecto 3: Microplásticos</span>
+                    </div>
+                    <div class="leyenda-item">
+                        <div class="color-marker" style="background-color: #f39c12;"></div>
+                        <span>Proyecto 4: Etnofarmacología</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Detalles de Proyectos -->
+    <section class="detalles-proyectos">
+        <div class="container">
+            <div class="proyecto-detallado" id="proyecto1">
+                <div class="proyecto-header">
+                    <div class="proyecto-icon" style="background-color: #e74c3c;">
+                        <i class="fas fa-tractor"></i>
+                    </div>
+                    <div class="proyecto-titulo">
+                        <h2>Proyecto 1: La Ruta de los Plaguicidas</h2>
+                        <p class="proyecto-subtitulo">Monitoreo de poblaciones humanas en zonas agrícolas</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto-content">
+                    <div class="proyecto-info">
+                        <h3>Objetivo</h3>
+                        <p>Estudiar el impacto del glifosato y otros agroquímicos en la estabilidad genómica de trabajadores agrícolas y niños que viven cerca de zonas de fumigación en Argentina, Brasil y Paraguay.</p>
+                        
+                        <h3>Metodología</h3>
+                        <ul>
+                            <li><strong>Biomonitoreo humano</strong> con Ensayo Cometa en células sanguíneas</li>
+                            <li><strong>Test de micronúcleos</strong> en células de mucosa bucal</li>
+                            <li><strong>Análisis de residuos</strong> de plaguicidas en muestras ambientales</li>
+                            <li><strong>Evaluación clínica</strong> de síntomas relacionados</li>
+                        </ul>
+                        
+                        <h3>Resultados Preliminares</h3>
+                        <div class="resultados-grid">
+                            <div class="resultado-item">
+                                <div class="resultado-valor">43%</div>
+                                <div class="resultado-desc">Mayor daño al ADN en población expuesta</div>
+                            </div>
+                            <div class="resultado-item">
+                                <div class="resultado-valor">15%</div>
+                                <div class="resultado-desc">Incremento en micronúcleos en niños</div>
+                            </div>
+                            <div class="resultado-item">
+                                <div class="resultado-valor">5x</div>
+                                <div class="resultado-desc">Mayor riesgo de alteraciones cromosómicas</div>
+                            </div>
+                        </div>
+                        
+                        <div class="proyecto-equipo">
+                            <h4>Equipo Investigador</h4>
+                            <div class="investigadores">
+                                <span class="investigador">Dra. Laura Méndez (Argentina)</span>
+                                <span class="investigador">Dr. Roberto Silva (Brasil)</span>
+                                <span class="investigador">Dra. Carmen González (Paraguay)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="proyecto-estadisticas">
+                        <div class="estadistica-card">
+                            <h4>Áreas de Estudio</h4>
+                            <ul>
+                                <li>Pampa argentina</li>
+                                <li>Mato Grosso (Brasil)</li>
+                                <li>Oriente paraguayo</li>
+                            </ul>
+                        </div>
+                        <div class="estadistica-card">
+                            <h4>Duración</h4>
+                            <p>2022 - 2025</p>
+                        </div>
+                        <div class="estadistica-card">
+                            <h4>Financiamiento</h4>
+                            <p>IAEMGS + Gobiernos locales</p>
+                        </div>
+                        <div class="estadistica-card">
+                            <h4>Muestras Analizadas</h4>
+                            <p>1,200 personas</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proyecto-detallado" id="proyecto2">
+                <div class="proyecto-header">
+                    <div class="proyecto-icon" style="background-color: #3498db;">
+                        <i class="fas fa-mountain"></i>
+                    </div>
+                    <div class="proyecto-titulo">
+                        <h2>Proyecto 2: Minería y Metales Pesados</h2>
+                        <p class="proyecto-subtitulo">Investigación liderada por la UMSA (Bolivia)</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto-content">
+                    <div class="proyecto-info">
+                        <h3>Objetivo</h3>
+                        <p>Evaluar cómo el mercurio (usado en minería de oro) y el arsénico bloquean los mecanismos de reparación natural del ADN en poblaciones mineras y comunidades aledañas.</p>
+                        
+                        <h3>Áreas de Estudio</h3>
+                        <ul>
+                            <li><strong>Potosí:</strong> Minería tradicional</li>
+                            <li><strong>La Paz:</strong> Minería de oro con mercurio</li>
+                            <li><strong>Oruro:</strong> Contaminación por arsénico</li>
+                        </ul>
+                        
+                        <h3>Hallazgos Principales</h3>
+                        <div class="hallazgos">
+                            <div class="hallazgo">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <p><strong>Mercurio inhibe</strong> la enzima PARP-1, crucial para la reparación del ADN</p>
+                            </div>
+                            <div class="hallazgo">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <p><strong>Arsénico induce</strong> estrés oxidativo y daño al ADN mitocondrial</p>
+                            </div>
+                            <div class="hallazgo">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <p><strong>Correlación directa</strong> entre niveles en sangre y daño genómico</p>
+                            </div>
+                        </div>
+                        
+                        <h3>Impacto en Políticas Públicas</h3>
+                        <p>Los resultados han sido presentados al Ministerio de Minería de Bolivia para la reformulación de protocolos de seguridad y monitoreo ambiental.</p>
+                    </div>
+                    
+                    <div class="proyecto-imagen">
+                        <div class="imagen-placeholder">
+                            <i class="fas fa-chart-bar"></i>
+                            <p>Gráfico: Daño al ADN vs. Concentración de Mercurio</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proyecto-detallado" id="proyecto3">
+                <div class="proyecto-header">
+                    <div class="proyecto-icon" style="background-color: #2ecc71;">
+                        <i class="fas fa-water"></i>
+                    </div>
+                    <div class="proyecto-titulo">
+                        <h2>Proyecto 3: Biomonitoreo de Microplásticos</h2>
+                        <p class="proyecto-subtitulo">Un proyecto de vanguardia regional</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto-content">
+                    <div class="proyecto-info">
+                        <h3>Objetivo</h3>
+                        <p>Analizar la presencia de partículas plásticas en tejidos humanos y su capacidad para inducir estrés oxidativo y daño celular en poblaciones costeras y urbanas.</p>
+                        
+                        <h3>Metodología Innovadora</h3>
+                        <ul>
+                            <li><strong>Espectroscopía Raman</strong> para identificación de polímeros</li>
+                            <li><strong>Microscopía electrónica</strong> de tejidos</li>
+                            <li><strong>Biomarcadores</strong> de estrés oxidativo (8-OHdG)</li>
+                            <li><strong>Secuenciación</strong> del microbioma intestinal</li>
+                        </ul>
+                        
+                        <h3>Resultados Preliminares</h3>
+                        <div class="hallazgos">
+                            <div class="hallazgo">
+                                <i class="fas fa-vial"></i>
+                                <p><strong>Microplásticos detectados</strong> en 85% de muestras de tejido adiposo</p>
+                            </div>
+                            <div class="hallazgo">
+                                <i class="fas fa-dna"></i>
+                                <p><strong>Correlación positiva</strong> con marcadores de inflamación</p>
+                            </div>
+                            <div class="hallazgo">
+                                <i class="fas fa-fish"></i>
+                                <p><strong>Vías de exposición:</strong> pescado (47%), agua (32%), aire (21%)</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="proyecto-estadisticas">
+                        <div class="estadistica-card">
+                            <h4>Países Participantes</h4>
+                            <ul>
+                                <li>Chile</li>
+                                <li>Perú</li>
+                                <li>Colombia</li>
+                                <li>México</li>
+                            </ul>
+                        </div>
+                        <div class="estadistica-card">
+                            <h4>Muestras Analizadas</h4>
+                            <p>450 tejidos</p>
+                        </div>
+                        <div class="estadistica-card">
+                            <h4>Tipos de Plásticos</h4>
+                            <p>PET, PP, PE, PS</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="proyecto-detallado" id="proyecto4">
+                <div class="proyecto-header">
+                    <div class="proyecto-icon" style="background-color: #f39c12;">
+                        <i class="fas fa-leaf"></i>
+                    </div>
+                    <div class="proyecto-titulo">
+                        <h2>Proyecto 4: Etnofarmacología y Antimutagénesis</h2>
+                        <p class="proyecto-subtitulo">Biodiversidad andina y amazónica</p>
+                    </div>
+                </div>
+                
+                <div class="proyecto-content">
+                    <div class="proyecto-info">
+                        <h3>Objetivo</h3>
+                        <p>Búsqueda en la biodiversidad andina y amazónica de compuestos naturales (fitoquímicos) que puedan prevenir el daño genético o potenciar la reparación celular.</p>
+                        
+                        <h3>Plantas en Estudio</h3>
+                        <div class="plantas-grid">
+                            <div class="planta-card">
+                                <h4>Uncaria tomentosa (Uña de gato)</h4>
+                                <p>Efecto protector contra mutagenicidad inducida por radiación UV</p>
+                            </div>
+                            <div class="planta-card">
+                                <h4>Baccharis genistelloides (Carqueja)</h4>
+                                <p>Actividad antimutagénica frente a hidrocarburos aromáticos</p>
+                            </div>
+                            <div class="planta-card">
+                                <h4>Smallanthus sonchifolius (Yacón)</h4>
+                                <p>Compuestos fenólicos que reducen el daño oxidativo al ADN</p>
+                            </div>
+                        </div>
+                        
+                        <h3>Metodología</h3>
+                        <ul>
+                            <li><strong>Extracción y fraccionamiento</strong> de principios activos</li>
+                            <li><strong>Test de Ames</strong> con y sin activación metabólica</li>
+                            <li><strong>Ensayo Cometa</strong> para evaluar protección</li>
+                            <li><strong>Identificación</strong> por HPLC-MS</li>
+                        </ul>
+                        
+                        <h3>Aplicaciones Potenciales</h3>
+                        <div class="aplicaciones">
+                            <span class="aplicacion">Suplementos dietéticos</span>
+                            <span class="aplicacion">Fotoprotección cutánea</span>
+                            <span class="aplicacion">Agentes quimiopreventivos</span>
+                        </div>
+                    </div>
+                    
+                    <div class="proyecto-imagen">
+                        <div class="imagen-placeholder">
+                            <i class="fas fa-seedling"></i>
+                            <p>Análisis fitoquímico de plantas medicinales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">AL</div>
+                            <div class="logo-text">
+                                <h3>ALAMCTA</h3>
+                                <p>Desde 1980</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p>Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    <p>Rama regional oficial de la IAEMGS</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Historia Institucional</a></li>
+                        <li><a href="investigacion.html">Metodologías</a></li>
+                        <li><a href="proyectos.html">Proyectos Estratégicos</a></li>
+                        <li><a href="eventos.html">Próximo Congreso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> contacto@alamcta.org</p>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ALAMCTA. Todos los derechos reservados.</p>
+                <p class="disclaimer">Organización científica sin fines de lucro registrada desde 1980</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

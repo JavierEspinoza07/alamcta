@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAMCTA - Contacto y Membresía</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación -->
+<!-- Header con Logo -->
+<header class="header">
+    <div class="container">
+        <!-- Banner Superior con Logo Completo -->
+        <div class="header-banner">
+            <div class="logo-completo">
+                <div class="logo-imagen">
+                    <!-- SVG del logo ALAMCTA -->
+                    <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Círculo de fondo -->
+                        <circle cx="30" cy="30" r="28" fill="white" stroke="#1A5276" stroke-width="1"/>
+                        <!-- Elemento ADN simplificado -->
+                        <path d="M 15 30 Q 20 20 30 30 Q 40 40 45 30" stroke="#1A5276" stroke-width="2" fill="none"/>
+                        <path d="M 15 30 Q 20 40 30 30 Q 40 20 45 30" stroke="#2E86C1" stroke-width="2" fill="none"/>
+                        <!-- Puntos de conexión -->
+                        <circle cx="20" cy="25" r="2" fill="#1A5276"/>
+                        <circle cx="40" cy="35" r="2" fill="#2E86C1"/>
+                        <!-- Texto AL -->
+                        <text x="30" y="50" text-anchor="middle" font-family="Arial" font-size="10" font-weight="bold" fill="#1A5276">AL</text>
+                    </svg>
+                </div>
+                <div class="logo-texto-completo">
+                    <h1 class="logo-titulo">ALAMCTA</h1>
+                    <p class="logo-subtitulo">Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    <p class="logo-lema">Ciencia para un ambiente saludable desde 1980</p>
+                </div>
+            </div>
+            
+            <!-- Información de contacto rápida -->
+            <div class="header-contacto">
+                <div class="contacto-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>contacto@alamcta.org</span>
+                </div>
+                <div class="contacto-item">
+                    <i class="fas fa-phone"></i>
+                    <span>+52 55 1234 5678</span>
+                </div>
+                <div class="contacto-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ciudad de México, México</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Navegación Principal -->
+        <nav class="navbar">
+            <div class="logo-mini">
+                <a href="index.html">
+                    <div class="logo-icon">AL</div>
+                    <div class="logo-text">
+                        <h2>ALAMCTA</h2>
+                        <p>Ciencia ambiental</p>
+                    </div>
+                </a>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <ul class="nav-menu">
+                <li><a href="index.html"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="investigacion.html"><i class="fas fa-flask"></i> Investigación</a></li>
+                <li><a href="proyectos.html"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                <li><a href="galeria.html"><i class="fas fa-images"></i> Galería</a></li>
+                <li><a href="contacto.html"><i class="fas fa-envelope"></i> Contacto</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section Contacto -->
+    <section class="page-hero" style="background: linear-gradient(rgba(52, 152, 219, 0.9), rgba(41, 128, 185, 0.8)), url('https://images.unsplash.com/photo-1521737711867-e3b97375f902?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Contacto y Membresía</h1>
+            <p>Únete a nuestra red científica latinoamericana</p>
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto y Membresía -->
+    <section class="formulario-contacto">
+        <div class="container">
+            <div class="formulario-grid">
+                <!-- Formulario de Contacto -->
+                <div class="formulario-seccion">
+                    <h2><i class="fas fa-envelope"></i> Contacto General</h2>
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="nombre">Nombre completo *</label>
+                            <input type="text" id="nombre" name="nombre" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Correo electrónico *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="institucion">Institución / Universidad</label>
+                            <input type="text" id="institucion" name="institucion">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="pais">País *</label>
+                            <select id="pais" name="pais" required>
+                                <option value="">Seleccione un país</option>
+                                <option value="argentina">Argentina</option>
+                                <option value="bolivia">Bolivia</option>
+                                <option value="brasil">Brasil</option>
+                                <option value="chile">Chile</option>
+                                <option value="colombia">Colombia</option>
+                                <option value="mexico">México</option>
+                                <option value="paraguay">Paraguay</option>
+                                <option value="peru">Perú</option>
+                                <option value="uruguay">Uruguay</option>
+                                <option value="venezuela">Venezuela</option>
+                                <option value="otros">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="asunto">Asunto *</label>
+                            <select id="asunto" name="asunto" required>
+                                <option value="">Seleccione un asunto</option>
+                                <option value="informacion">Información general</option>
+                                <option value="membresia">Membresía en ALAMCTA</option>
+                                <option value="congreso">Próximo congreso</option>
+                                <option value="cursos">Cursos de formación</option>
+                                <option value="proyectos">Participación en proyectos</option>
+                                <option value="otros">Otro</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="mensaje">Mensaje *</label>
+                            <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-block">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+                
+                <!-- Formulario de Membresía -->
+                <div class="formulario-seccion">
+                    <div class="membresia-header">
+                        <h2><i class="fas fa-user-plus"></i> Solicitud de Membresía</h2>
+                        <div class="membresia-badge">
+                            <i class="fas fa-star"></i>
+                            <span>Únete a ALAMCTA</span>
+                        </div>
+                    </div>
+                    
+                    <div class="membresia-beneficios">
+                        <h3>Beneficios de ser miembro:</h3>
+                        <ul>
+                            <li><i class="fas fa-check-circle"></i> Descuento en congresos y cursos</li>
+                            <li><i class="fas fa-check-circle"></i> Acceso a redes de colaboración internacional</li>
+                            <li><i class="fas fa-check-circle"></i> Información sobre becas y financiamiento</li>
+                            <li><i class="fas fa-check-circle"></i> Boletín científico mensual</li>
+                            <li><i class="fas fa-check-circle"></i> Posibilidad de postular a bolsas de viaje</li>
+                            <li><i class="fas fa-check-circle"></i> Acceso a protocolos y manuales técnicos</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="membresia-tipos">
+                        <h3>Tipos de Membresía</h3>
+                        <div class="tipos-grid">
+                            <div class="tipo-card">
+                                <h4>Regular</h4>
+                                <p class="tipo-precio">USD 50<span>/año</span></p>
+                                <p class="tipo-desc">Investigadores y profesionales</p>
+                            </div>
+                            <div class="tipo-card">
+                                <h4>Estudiante</h4>
+                                <p class="tipo-precio">USD 20<span>/año</span></p>
+                                <p class="tipo-desc">Estudiantes de posgrado</p>
+                            </div>
+                            <div class="tipo-card">
+                                <h4>Institucional</h4>
+                                <p class="tipo-precio">USD 200<span>/año</span></p>
+                                <p class="tipo-desc">Universidades y centros de investigación</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="membresia-accion">
+                        <a href="#" class="btn btn-secondary btn-block">
+                            <i class="fas fa-file-download"></i> Descargar Formulario de Membresía (PDF)
+                        </a>
+                        <p class="membresia-nota">Complete el formulario y envíelo a secretaria@alamcta.org</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Información de Contacto -->
+    <section class="info-contacto">
+        <div class="container">
+            <h2 class="section-title">Información de Contacto</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Sede Central</h3>
+                    <p>Instituto de Investigaciones Biomédicas<br>
+                    Universidad Nacional Autónoma de México<br>
+                    Ciudad de México, México</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Correos Electrónicos</h3>
+                    <p><strong>General:</strong> contacto@alamcta.org<br>
+                    <strong>Secretaría:</strong> secretaria@alamcta.org<br>
+                    <strong>Congresos:</strong> congresos@alamcta.org</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <h3>Teléfonos</h3>
+                    <p><strong>México:</strong> +52 55 1234 5678<br>
+                    <strong>Brasil:</strong> +55 11 98765 4321<br>
+                    <strong>Argentina:</strong> +54 11 8765 4321</p>
+                </div>
+                
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h3>Horario de Atención</h3>
+                    <p>Lunes a Viernes<br>
+                    9:00 - 17:00 hrs (GMT-6)<br>
+                    Respuesta en 48 horas hábiles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Red Regional -->
+    <section class="red-regional">
+        <div class="container">
+            <h2 class="section-title">Contactos por País</h2>
+            <div class="paises-grid">
+                <div class="pais-card">
+                    <div class="pais-bandera argentina"></div>
+                    <h3>Argentina</h3>
+                    <p><strong>Contacto:</strong> Dr. Carlos López<br>
+                    <strong>Email:</strong> argentina@alamcta.org<br>
+                    <strong>Sociedad:</strong> SAG</p>
+                </div>
+                
+                <div class="pais-card">
+                    <div class="pais-bandera brasil"></div>
+                    <h3>Brasil</h3>
+                    <p><strong>Contacto:</strong> Dra. Ana Silva<br>
+                    <strong>Email:</strong> brasil@alamcta.org<br>
+                    <strong>Sociedad:</strong> MutaGen-Brasil</p>
+                </div>
+                
+                <div class="pais-card">
+                    <div class="pais-bandera chile"></div>
+                    <h3>Chile</h3>
+                    <p><strong>Contacto:</strong> Dr. Pablo González<br>
+                    <strong>Email:</strong> chile@alamcta.org<br>
+                    <strong>Sociedad:</strong> SOCHIGEN</p>
+                </div>
+                
+                <div class="pais-card">
+                    <div class="pais-bandera mexico"></div>
+                    <h3>México</h3>
+                    <p><strong>Contacto:</strong> Dra. María Rodríguez<br>
+                    <strong>Email:</strong> mexico@alamcta.org<br>
+                    <strong>Sociedad:</strong> Sociedad Mexicana de Genética</p>
+                </div>
+                
+                <div class="pais-card">
+                    <div class="pais-bandera colombia"></div>
+                    <h3>Colombia</h3>
+                    <p><strong>Contacto:</strong> Dr. Juan Pérez<br>
+                    <strong>Email:</strong> colombia@alamcta.org<br>
+                    <strong>Sociedad:</strong> ACG</p>
+                </div>
+                
+                <div class="pais-card">
+                    <div class="pais-bandera peru"></div>
+                    <h3>Perú</h3>
+                    <p><strong>Contacto:</strong> Dra. Lucía Mendoza<br>
+                    <strong>Email:</strong> peru@alamcta.org<br>
+                    <strong>Sociedad:</strong> Sociedad Peruana de Genética</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="faq-contacto">
+        <div class="container">
+            <h2 class="section-title">Preguntas Frecuentes</h2>
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h3>¿Quién puede ser miembro de ALAMCTA?</h3>
+                    <p>Investigadores, profesionales, estudiantes de posgrado y personas interesadas en genotoxicología ambiental de cualquier país latinoamericano o del mundo.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cómo puedo participar en los proyectos de investigación?</h3>
+                    <p>Contacte al coordinador del proyecto de su interés o envíe su CV y propuesta a proyectos@alamcta.org. Se evalúan nuevas colaboraciones periódicamente.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Cuál es el proceso para enviar un abstract al congreso?</h3>
+                    <p>Regístrese en la plataforma del congreso, complete el formulario de envío y adjunte su abstract según las instrucciones. Todos los envíos son revisados por pares.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>¿Ofrecen becas para estudiantes?</h3>
+                    <p>Sí, ofrecemos becas de matrícula para cursos, bolsas de viaje para congresos y apoyo para pasantías en laboratorios miembros. Consulte la sección de Eventos.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">AL</div>
+                            <div class="logo-text">
+                                <h3>ALAMCTA</h3>
+                                <p>Desde 1980</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p>Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    <p>Rama regional oficial de la IAEMGS</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Historia Institucional</a></li>
+                        <li><a href="investigacion.html">Metodologías</a></li>
+                        <li><a href="proyectos.html">Proyectos Estratégicos</a></li>
+                        <li><a href="eventos.html">Próximo Congreso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> contacto@alamcta.org</p>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ALAMCTA. Todos los derechos reservados.</p>
+                <p class="disclaimer">Organización científica sin fines de lucro registrada desde 1980</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>

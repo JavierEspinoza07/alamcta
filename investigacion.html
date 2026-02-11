@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ALAMCTA - Investigación</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navegación (mismo que index.html) -->
+      <header class="header">
+    <div class="container">
+        <nav class="navbar">
+            <!-- Logo con Imagen a la Izquierda -->
+            <div class="logo-con-imagen">
+                <a href="index.html" class="logo-link">
+                    <div class="logo-img-container">
+                        <!-- Imagen del logo -->
+                        <img src="assets/img/logo.jpg" 
+                             alt="ALAMCTA - Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental"
+                             class="logo-img">
+                    </div>
+                    <div class="logo-texto">
+                        <h1 class="logo-titulo">ALAMCTA</h1>
+                        <p class="logo-descripcion">Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    </div>
+                </a>
+            </div>
+            
+            <!-- Botón Menú Móvil -->
+            <button class="mobile-menu-btn" aria-label="Menú móvil">
+                <i class="fas fa-bars"></i>
+            </button>
+            
+            <!-- Menú de Navegación -->
+            <ul class="nav-menu">
+                <li><a href="index.html" class="active"><i class="fas fa-home"></i> Inicio</a></li>
+                <li><a href="nosotros.html"><i class="fas fa-users"></i> Nosotros</a></li>
+                <li><a href="investigacion.html"><i class="fas fa-flask"></i> Investigación</a></li>
+                <li><a href="proyectos.html"><i class="fas fa-project-diagram"></i> Proyectos</a></li>
+                <li><a href="eventos.html"><i class="fas fa-calendar-alt"></i> Eventos</a></li>
+                <li><a href="galeria.html"><i class="fas fa-images"></i> Galería</a></li>
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+    <!-- Hero Section Investigación -->
+    <section class="page-hero" style="background: linear-gradient(rgba(76, 175, 80, 0.9), rgba(56, 142, 60, 0.8)), url('https://images.unsplash.com/photo-1582719508461-905c673771fd?ixlib=rb-4.0.3&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>Investigación Científica</h1>
+            <p>Técnicas y metodologías para estudiar el daño genético ambiental</p>
+        </div>
+    </section>
+
+    <!-- Sección Pilares Científicos -->
+    <section class="pilares-cientificos">
+        <div class="container">
+            <h2 class="section-title">Pilares Científicos de ALAMCTA</h2>
+            <p class="section-subtitle">Tres grandes áreas que explican cómo el ambiente enferma al ADN</p>
+            
+            <div class="pilares-detallados">
+                <div class="pilar-detallado">
+                    <div class="pilar-header">
+                        <div class="pilar-numero">01</div>
+                        <h3>Mutagénesis</h3>
+                    </div>
+                    <div class="pilar-content">
+                        <p>Estudio de agentes (mutágenos) que causan alteraciones permanentes en la secuencia de nucleótidos del ADN, incluyendo:</p>
+                        <ul>
+                            <li>Mutaciones puntuales</li>
+                            <li>Inserciones y deleciones</li>
+                            <li>Rearreglos cromosómicos</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pilar-detallado">
+                    <div class="pilar-header">
+                        <div class="pilar-numero">02</div>
+                        <h3>Carcinogénesis</h3>
+                    </div>
+                    <div class="pilar-content">
+                        <p>Investigación de las etapas mediante las cuales el daño genético deriva en neoplasias malignas:</p>
+                        <ul>
+                            <li><strong>Iniciación:</strong> Daño al ADN</li>
+                            <li><strong>Promoción:</strong> Expansión clonal</li>
+                            <li><strong>Progresión:</strong> Invasión y metástasis</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="pilar-detallado">
+                    <div class="pilar-header">
+                        <div class="pilar-numero">03</div>
+                        <h3>Teratogénesis</h3>
+                    </div>
+                    <div class="pilar-content">
+                        <p>Evaluación de sustancias que atraviesan la barrera placentaria y causan:</p>
+                        <ul>
+                            <li>Malformaciones congénitas estructurales</li>
+                            <li>Daños funcionales en el feto</li>
+                            <li>Alteraciones del desarrollo gestacional</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Metodologías -->
+    <section class="metodologias">
+        <div class="container">
+            <h2 class="section-title">Metodologías de Diagnóstico</h2>
+            <p class="section-subtitle">Protocolos estándar internacional utilizados por los investigadores de ALAMCTA</p>
+            
+            <div class="metodologias-grid">
+                <div class="metodologia-card">
+                    <div class="metodologia-icon">
+                        <i class="fas fa-dna"></i>
+                    </div>
+                    <h3>Ensayo Cometa</h3>
+                    <p><strong>Electroforesis en gel de células individuales</strong> para detectar roturas de cadena simple y doble en el ADN. Técnica altamente sensible para evaluar daño genotóxico.</p>
+                    <div class="metodologia-detalle">
+                        <h4>Aplicaciones:</h4>
+                        <ul>
+                            <li>Biomonitoreo humano</li>
+                            <li>Evaluación de genotoxicidad in vitro</li>
+                            <li>Estudios de reparación del ADN</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-descarga"><i class="fas fa-download"></i> Protocolo PDF</a>
+                </div>
+                
+                <div class="metodologia-card">
+                    <div class="metodologia-icon">
+                        <i class="fas fa-circle-notch"></i>
+                    </div>
+                    <h3>Test de Micronúcleos</h3>
+                    <p><strong>Identificación de fragmentos de cromosomas</strong> que quedan fuera del núcleo durante la división celular, indicando daño clastogénico o aneugénico.</p>
+                    <div class="metodologia-detalle">
+                        <h4>Aplicaciones:</h4>
+                        <ul>
+                            <li>Monitoreo de poblaciones expuestas</li>
+                            <li>Evaluación de agentes aneugénicos</li>
+                            <li>Citoquímica automatizada</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-descarga"><i class="fas fa-download"></i> Protocolo PDF</a>
+                </div>
+                
+                <div class="metodologia-card">
+                    <div class="metodologia-icon">
+                        <i class="fas fa-bacterium"></i>
+                    </div>
+                    <h3>Test de Ames</h3>
+                    <p><strong>Uso de cepas de Salmonella typhimurium</strong> para evaluar si una sustancia nueva es potencialmente mutagénica, detectando mutaciones de reversión.</p>
+                    <div class="metodologia-detalle">
+                        <h4>Aplicaciones:</h4>
+                        <ul>
+                            <li>Screening de compuestos químicos</li>
+                            <li>Evaluación de fármacos</li>
+                            <li>Estudios de metabolismo</li>
+                        </ul>
+                    </div>
+                    <a href="#" class="btn-descarga"><i class="fas fa-download"></i> Protocolo PDF</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Otras Técnicas -->
+    <section class="otras-tecnicas">
+        <div class="container">
+            <h2 class="section-title">Otras Técnicas Avanzadas</h2>
+            <div class="tecnicas-grid">
+                <div class="tecnica-item">
+                    <h4><i class="fas fa-chart-line"></i> Secuenciación de Nueva Generación (NGS)</h4>
+                    <p>Identificación de mutaciones somáticas y perfiles de mutación ambiental</p>
+                </div>
+                <div class="tecnica-item">
+                    <h4><i class="fas fa-exchange-alt"></i> FISH (Hibridación Fluorescente in situ)</h4>
+                    <p>Detección de aberraciones cromosómicas y reordenamientos genéticos</p>
+                </div>
+                <div class="tecnica-item">
+                    <h4><i class="fas fa-microscope"></i> Ensayo de Aberraciones Cromosómicas</h4>
+                    <p>Evaluación de daño estructural en cromosomas metafásicos</p>
+                </div>
+                <div class="tecnica-item">
+                    <h4><i class="fas fa-vial"></i> Ensayo de Intercambio de Cromátidas Hermanas</h4>
+                    <p>Medición de recombinación homóloga inducida por genotóxicos</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer (mismo que index.html) -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <a href="index.html">
+                            <div class="logo-icon">AL</div>
+                            <div class="logo-text">
+                                <h3>ALAMCTA</h3>
+                                <p>Desde 1980</p>
+                            </div>
+                        </a>
+                    </div>
+                    <p>Asociación Latinoamericana de Mutagénesis, Carcinogénesis y Teratogénesis Ambiental</p>
+                    <p>Rama regional oficial de la IAEMGS</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Enlaces Rápidos</h4>
+                    <ul>
+                        <li><a href="nosotros.html">Historia Institucional</a></li>
+                        <li><a href="investigacion.html">Metodologías</a></li>
+                        <li><a href="proyectos.html">Proyectos Estratégicos</a></li>
+                        <li><a href="eventos.html">Próximo Congreso</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p><i class="fas fa-envelope"></i> contacto@alamcta.org</p>
+                    <p><i class="fas fa-phone"></i> +52 55 1234 5678</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Ciudad de México, México</p>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-researchgate"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 ALAMCTA. Todos los derechos reservados.</p>
+                <p class="disclaimer">Organización científica sin fines de lucro registrada desde 1980</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
